@@ -1,0 +1,54 @@
+.contact {
+  height: fit-content;
+  min-height: 100vh;
+  background-color: var(--section-bg-color);
+}
+
+.contact-container {
+  margin: 10% 8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+
+.contact-item-container {
+  margin: 5% 5%;
+}
+
+.email div,
+.telegram div,
+.phonenumber div,
+.linkedin div {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.linkedin a {
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  transition: color 0.2s;
+}
+
+.linkedin a::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  bottom: -2px;
+  width: 96%;
+  height: 2px;
+  background-color: #48a3ed;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.linkedin a:hover {
+  color: #2c98f0;
+}
+
+.linkedin a:hover::after {
+  transform: scaleX(1);
+}

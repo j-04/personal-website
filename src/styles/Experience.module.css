@@ -1,0 +1,113 @@
+.experience {
+  height: fit-content;
+  min-height: 100vh;
+  background-color: var(--section-bg-color);
+  padding-bottom: 4rem;
+}
+
+.timeline-container {
+  position: relative;
+  height: 100%;
+  margin: 5rem 5rem;
+  margin-bottom: 0;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #ccdae8;
+  top: 0;
+  bottom: 0;
+  left: -1rem;
+}
+
+.timeline-container__item {
+  position: relative;
+  margin: 3rem;
+  padding: 2.5rem;
+  margin-bottom: 0;
+  background-color: #e5ecf3;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.timeline-container__item::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: -5.13rem;
+  background-color: #ee4949;
+  border: 5px solid #ccdae8;
+  top: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-container__item::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 0;
+  top: 1.5rem;
+  left: -1.5rem;
+  border: medium solid #e5ecf3;
+  border-width: 15px 25px 15px 0;
+  border-color: transparent #e5ecf3 transparent transparent;
+}
+
+.timeline-container__item__company {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.timeline-container__item__role {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.timeline-container__item p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+}
+
+.timeline-container__item ul {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+.timeline-container__item li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.timeline-container__item span {
+  margin: 0.5rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.timeline-container__end {
+  position: relative;
+  margin: 3rem;
+  padding: 2.5rem;
+  margin-bottom: 0;
+}
+
+.timeline-container__end::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: -5.13rem;
+  top: 3rem;
+  background-color: #ccdae8;
+  border: 5px solid #ccdae8;
+  border-radius: 50%;
+  z-index: 1;
+}

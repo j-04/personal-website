@@ -1,0 +1,107 @@
+.projects {
+  --title-font-size: 1.5rem;
+  --content-font-size: 1.2rem;
+
+  height: fit-content;
+  min-height: 100vh;
+  background-color: var(--section-bg-color);
+}
+
+.projects-cards {
+  margin: 4rem 4rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 12rem auto;
+  grid-template-rows: repeat(4, fit-content);
+  align-items: start;
+  justify-items: left;
+}
+
+.content::after {
+  content: '';
+  position: absolute;
+  height: 105%;
+  width: 0.2rem;
+  top: 0rem;
+  left: 11rem;
+  background-color: #cbdae7;
+}
+
+.content div {
+  margin: 1rem 0;
+}
+
+.date,
+.description,
+.url,
+.githuburl {
+  font-size: var(--title-font-size);
+  font-weight: 500;
+}
+
+.date-content {
+  font-size: var(--content-font-size);
+}
+
+.description-content {
+  font-size: var(--content-font-size);
+  text-align: justify;
+}
+
+.url-content {
+  font-size: var(--content-font-size);
+}
+
+.githuburl-content {
+  font-size: var(--content-font-size);
+}
+
+/*General for URL and GitHub url*/
+.url-content,
+.githuburl-content {
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  transition: color 0.2s;
+}
+
+.url-content::after,
+.githuburl-content::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  bottom: -2px;
+  width: 96%;
+  height: 2px;
+  background-color: #48a3ed;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.url-content:hover,
+.githuburl-content:hover {
+  color: #2c98f0;
+}
+
+.url-content:hover::after,
+.githuburl-content:hover::after {
+  transform: scaleX(1);
+}
+
+/* General for date and description */
+.date-content,
+.description-content {
+  line-height: 1.8rem;
+}

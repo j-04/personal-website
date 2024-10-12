@@ -1,0 +1,17 @@
+.layout {
+  display: grid;
+  grid-template-columns: 25rem auto;
+  grid-template-areas: 'side main';
+}
+
+.stub-sidebar {
+  background: var(--sidebar-bg-color);
+  grid-area: 'side';
+}
+
+.main {
+  text-align: center;
+  height: 100vh;
+  background: none;
+  grid-column: 2 / 3;
+}
